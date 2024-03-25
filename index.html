@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button id="dark-mode-toggle" aria-label="Alternar Modo Noturno">
+    <span id="dark-mode-icon">🌙</span> 
+  </button>
+
+  <nav id="desktop-nav">
+    <div class="logo">Luíza Bôa Morte</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Luíza Bôa Morte</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container-profile">
+      <img src="./assets/profilepic.png" alt="profile picture" class="profilepic"/>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Luíza Bôa Morte</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('curriculo.html')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/luíza-bôa-morte?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/luizamfbm'"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container-about">
+        <img
+          src="assets/img.jpg"
+          alt="Profile picture"
+          class="about-pic" 
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3 class="ex">Experience</h3>
+            <p class="ex"> Studying for 2 years <br />Full Stack Development</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3 class="ex">Education</h3>
+            <p class="ex">Análise e Desenvolvimento de sistemas  e Engenharia de Software
+          </div>
+        </div>
+        <div class="text-container">
+          <p class="education">
+            Sou uma estudante com sede de conhecimento na área profissional assim como na de autodesenvolvimento. Sou técnica em Automação industrial e atualmente curso Engenharia de Software. Apaixonada por línguas estrangeiras, amante das artes e do conhecimento lógico, gosto de ser desafiada e de encontrar as melhores soluções para os problemas. Meus colegas me descreveriam como uma pessoa determinada, sociável, empática e objetiva, que sabe lidar com pessoas e estabelecer um bom convívio no ambiente coletivo. Atualmente, estou buscando oportunidades que me permitam desenvolver soluções tecnológicas de forma criativa e objetiva e que possibilitem crescimento mútuo. Os campos de interesse específicos incluem Desenvolvimento Full Stack, Engenharia de Software e Desenvolvimento Back End.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Fullstack Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">HTML</h3>
+                <p class="experience-content">Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">CSS</h3>
+                <p class="experience-content">Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">SASS</h3>
+                <p class="experience-content">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">JavaScript</h3>
+                <p class="experience-content">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">Bootstrap</h3>
+                <p class="experience-content">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">Git</h3>
+                <p class="experience-content">Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Fullstack Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">C++, Ruby </h3>
+                <p class="experience-content">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">Microsoft Word, Power Point</h3>
+                <p class="experience-content">Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">Microsoft Excel</h3>
+                <p class="experience-content">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="experience-content">Git</h3>
+                <p class="experience-content">Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="assets/214042952-b031303b-d9ca-4af0-93eb-2e06f33b7fab.png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <img
+            src="assets/214042962-604c6149-2fa9-46d2-a6fb-78077bb0293a.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/luizamfbm/primeira-pagina-web-luiza'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://youtu.be/OB9ca7tj_jQ'"
+          >
+            Live Demo
+          </button>
+        </div>
+
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="assets/lightmodepic.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+          <img
+            src="assets/darkmode.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/luizamfbm/darklightform'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://youtu.be/GJJ0Vl7Suak'"
+          >
+            Live Demo
+          </button>
+      </div>
+          
+  
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:luizafelix001@gmail.com">luizafelix001@gmail.com </a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p onclick="location.href='https://www.linkedin.com/in/luíza-bôa-morte?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'">LinkedIn</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Luíza Bôa Morte. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
